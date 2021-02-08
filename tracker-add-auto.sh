@@ -9,7 +9,7 @@ add_trackers () {
     torrent_hash=$1
     id=$2
     trackerslist=/tmp/trackers.txt
-for base_url in https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt ; do
+for base_url in https://trackerslist.com/all.txt ; do
 if [ ! -f $trackerslist ]; then
 curl -o "$trackerslist" "${base_url}"
 fi
